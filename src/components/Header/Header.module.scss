@@ -1,0 +1,7 @@
+@import './src/styles/mixins';
+
+.mainHeader__Descriptions {
+	@include media-mobile{
+		display: none;
+	}
+}
