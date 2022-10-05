@@ -46,7 +46,7 @@ export const Header = () => {
 			</Descriptions.Item>
 
 			<Descriptions.Item label="Specialist resume">
-				<a href='https://ekaterinburg.hh.ru/resume/c3452b2dff08395f760039ed1f547061513548'>hh.ru</a>
+				<a target="_blank" href='https://ekaterinburg.hh.ru/resume/c3452b2dff08395f760039ed1f547061513548'>hh.ru</a>
 			</Descriptions.Item>
 
 			<Descriptions.Item label="Task">2022-10-05</Descriptions.Item>
