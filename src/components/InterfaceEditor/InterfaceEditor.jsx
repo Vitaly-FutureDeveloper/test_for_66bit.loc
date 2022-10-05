@@ -1,12 +1,11 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import { Button } from 'antd';
+import {Button} from 'antd';
 
 import styles from './InterfaceEditor.module.scss';
 import {getAllSectionsRedactor} from "../../redux/redactor-selector";
 import {EditorItem} from "./EditorItem/EditorItem";
 import {initialSectionFromLocalStorageThunk, setSectionThunk} from "../../redux/redactor-reducer";
-
 
 
 export const InterfaceEditor = () => {

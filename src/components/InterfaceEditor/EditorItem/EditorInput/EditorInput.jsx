@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import { Input, Button } from 'antd';
+import {Input} from 'antd';
+
 import styles from './../../InterfaceEditor.module.scss';
 import {getInputName, getInputType, getInputValue} from "../../../../redux/redactor-selector";
 import {setOptionKeyThunk, setOptionValueThunk} from "../../../../redux/redactor-reducer";

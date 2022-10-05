@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
-import {Button, Descriptions, PageHeader} from "antd";
-import styles from "./Header.module.scss";
 import {useDispatch, useSelector} from "react-redux";
+import {Button, Descriptions, PageHeader} from "antd";
+
 import {getEditMode} from "../../redux/redactor-selector";
 import {EDIT_TEXT, EDIT_UI, setEditModeAC} from "../../redux/redactor-reducer";
 
@@ -33,24 +33,23 @@ export const Header = () => {
 
 
 	return <PageHeader
-		className={styles.mainHeader}
 		ghost={false}
-		// onBack={() => window.history.back()}
 		title="Test Task"
-		// subTitle="This is a subtitle"
 		extra={[
 			<Button onClick={onChangeEditToText} key="2" type={editBtnTypeText}>Текстовый редактор</Button>,
 			<Button onClick={onChangeEditToUI} key="1" type={editBtnTypeUI}>Интерфейс</Button>,
 		]}
 	>
-		<Descriptions className={styles.mainHeader__Descriptions} size="small" column={1}>
+		<Descriptions  size="small" column={1}>
 			<Descriptions.Item label="Created by">
 				Vitaliy Future Developer
 			</Descriptions.Item>
-			<Descriptions.Item label="Резюме">
+
+			<Descriptions.Item label="Specialist resume">
 				<a href='https://ekaterinburg.hh.ru/resume/c3452b2dff08395f760039ed1f547061513548'>hh.ru</a>
 			</Descriptions.Item>
-			<Descriptions.Item label="Task">2022-10-04</Descriptions.Item>
+
+			<Descriptions.Item label="Task">2022-10-05</Descriptions.Item>
 		</Descriptions>
 
 

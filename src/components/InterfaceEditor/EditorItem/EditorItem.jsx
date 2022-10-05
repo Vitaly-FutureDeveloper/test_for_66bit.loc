@@ -1,9 +1,10 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import { Input, Button } from 'antd';
+import {Button, Input} from 'antd';
+
 import styles from './../InterfaceEditor.module.scss';
 import {getOptions, getSectionName} from "../../../redux/redactor-selector";
-import {EditorInput, InputValue} from "./EditorInput/EditorInput";
+import {EditorInput} from "./EditorInput/EditorInput";
 import {setOptionThunk, setSectionKeyThunk} from "../../../redux/redactor-reducer";
 
 
@@ -14,7 +15,6 @@ export const EditorItem = ({indexSections}) => {
 
 	const sectionName = useSelector( (state) => getSectionName(state, indexSections) );
 	const options = useSelector( (state) => getOptions(state, indexSections) );
-
 
 	const onAddOption = () => {
 		dispatch( setOptionThunk(indexSections) );
