@@ -10,6 +10,7 @@
 
 	width: 40px;
 	height: 40px;
+	border: 1px solid black;
 
 	&::before{
 		transition: 0.3s;
@@ -107,4 +108,5 @@
 
 .editorInput{
 	width: 100%;
+	border: 1px solid black;
 }
