@@ -21,7 +21,7 @@ export const TextEditor = () => {
 	}, []);
 
 	const onChangeText = (evt) => {
-		setValue(evt.currentTarget.value);
+		setValue(evt);
 	};
 
 	const onSaveIniText = () => {
