@@ -2,15 +2,13 @@ import React from "react";
 import {Provider, useSelector} from "react-redux";
 import store from "./redux/redux";
 
-import 'antd/dist/antd.css';
-import './App.scss';
-import {ConfigIniParser} from "config-ini-parser";
+import "antd/dist/antd.min.css";
+import "./App.scss";
 import {TextEditor} from "./components/TextEditor/TextEditor";
-import { Button, Descriptions, PageHeader } from 'antd';
 import {Header} from "./components/Header/Header";
+import {InterfaceEditor} from "./components/InterfaceEditor/InterfaceEditor";
 import {getEditMode} from "./redux/redactor-selector";
 import {EDIT_TEXT, EDIT_UI} from "./redux/redactor-reducer";
-import {InterfaceEditor} from "./components/InterfaceEditor/InterfaceEditor";
 
 
 function App() {
