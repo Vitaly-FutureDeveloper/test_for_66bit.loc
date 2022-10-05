@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/test_for_66bit.loc/static/css/main.c6b6d4c9.css",
-    "main.js": "/test_for_66bit.loc/static/js/main.bceb5a6b.js",
+    "main.css": "/test_for_66bit.loc/static/css/main.f3525bac.css",
+    "main.js": "/test_for_66bit.loc/static/js/main.f9751418.js",
     "static/js/787.e9549b3f.chunk.js": "/test_for_66bit.loc/static/js/787.e9549b3f.chunk.js",
     "index.html": "/test_for_66bit.loc/index.html",
-    "main.c6b6d4c9.css.map": "/test_for_66bit.loc/static/css/main.c6b6d4c9.css.map",
-    "main.bceb5a6b.js.map": "/test_for_66bit.loc/static/js/main.bceb5a6b.js.map",
+    "main.f3525bac.css.map": "/test_for_66bit.loc/static/css/main.f3525bac.css.map",
+    "main.f9751418.js.map": "/test_for_66bit.loc/static/js/main.f9751418.js.map",
     "787.e9549b3f.chunk.js.map": "/test_for_66bit.loc/static/js/787.e9549b3f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c6b6d4c9.css",
-    "static/js/main.bceb5a6b.js"
+    "static/css/main.f3525bac.css",
+    "static/js/main.f9751418.js"
   ]
 }
