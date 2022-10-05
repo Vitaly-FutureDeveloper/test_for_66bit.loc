@@ -1,3 +1,111 @@
+@import './src/styles/mixins';
+
 .textForm{
+	width: 100%;
+}
+
+.btnBlock__plus{
+	position: relative;
+	margin-right: 10px;
+
+	width: 40px;
+	height: 40px;
+
+	&::before{
+		transition: 0.3s;
+		display: block;
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		width: 15px;
+		height: 2px;
+
+		background-color: black;
+	}
+
+	&::after{
+		transition: 0.3s;
+		display: block;
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) rotateZ(90deg);
+
+		width: 15px;
+		height: 2px;
+
+		background-color: #808080;
+	}
+
+	&:hover::after{
+		transform: translate(-50%, -50%) rotateZ(-90deg);
+	}
+	&:hover::before{
+		transform: translate(-50%, -50%) rotateZ(90deg);
+	}
+}
+.sectionList{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	width: 100%;
+}
+.sectionList__item{
+	margin-bottom: 30px;
+	border: 1px solid black;
+}
+.sectionListBlock{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+
+	width: 100%;
+
+	@include media-tablet{
+		flex-direction: column;
+	}
+}
+.sectionListWrap{
+	margin-right: 30px;
+	border-right: 1px solid black;
+	padding: 10px;
+	//width: auto;
+}
+
+.inputsBlocks{
+	flex: 3;
+	width: 100%;
+	margin-right: 30px;
+
+	@include media-tablet{
+		width: 90%;
+	}
+}
+
+.btnBlock{
+	margin-right: 30px;
+
+	@include media-tablet{
+		margin-top: 30px;
+	}
+}
+
+.labelInput{
+	flex: 1;
+	display: block;
+	width: 100%;
+
+	&:not(:last-child){
+		margin-bottom: 15px;
+	}
+
+}
+
+.editorInput{
 	width: 100%;
 }

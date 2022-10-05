@@ -1,15 +1,15 @@
 import { applyMiddleware, combineReducers, createStore } from "redux";
 import thunkMiddleware from "redux-thunk";
-import reductorReducer from "./reductor-reducer";
+import redactorReducer from "./redactor-reducer";
 
 
 
 const reducers = combineReducers({
-	reductorPage: reductorReducer
+	redactorPage: redactorReducer
 });
 
 const store = createStore(reducers, applyMiddleware(thunkMiddleware));
 
 
-// window.store = store;
+window.store = store;
 export default store;

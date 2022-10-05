@@ -8,8 +8,8 @@ import {ConfigIniParser} from "config-ini-parser";
 import {TextEditor} from "./components/TextEditor/TextEditor";
 import { Button, Descriptions, PageHeader } from 'antd';
 import {Header} from "./components/Header/Header";
-import {getEditMode} from "./redux/reductor-selector";
-import {EDIT_TEXT, EDIT_UI} from "./redux/reductor-reducer";
+import {getEditMode} from "./redux/redactor-selector";
+import {EDIT_TEXT, EDIT_UI} from "./redux/redactor-reducer";
 import {InterfaceEditor} from "./components/InterfaceEditor/InterfaceEditor";
 
 
@@ -24,19 +24,6 @@ function App() {
 const AppContent = () => {
 
 	const editMode = useSelector( getEditMode );
-
-	const iniContent = `
-[FirstSection]
-IntegerKey = 42
-StringKey = That’s true
-
-[NewSection]
-StringKeyToo = It was added here
-	`;
-	let parser = new ConfigIniParser();
-	parser.parse(iniContent);
-	let value = parser.get("FirstSection", "IntegerKey");
-	console.log(value);
 
 	return <main className="main">
 		<header>

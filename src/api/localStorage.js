@@ -1,8 +1,8 @@
 export class LocalStorage {
-	static setIni(iniText) {
+	static setINI(iniText) {
 		localStorage.setItem("ini", iniText);
 	}
-	static getIni(){
+	static getINI() {
 		return localStorage.getItem("ini");
 	}
 }
